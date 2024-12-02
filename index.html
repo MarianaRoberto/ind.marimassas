@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MariMassas</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Sobre nós</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Produtos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Receitas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Contato</a>
+      </ul>
+      <img src="img/Logo.png" alt="Logo da MariMassas" class="container__logo">
+    </div>
+    <div>
+      <h1 class="nome__titulo">Mari Massas</h1>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa loja o que precisa para contribuir com o seu desejo!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/EspagueteCaramelizado.png" alt="Macarrão Caramelizado"></div>
+        <div class="swiper-slide"><img src="img/PenneCaramelizado.png" alt="Macarrão Caramelizado"></div>
+        <div class="swiper-slide"><img src="img/EspagueteApimentado.png" alt="Macarrão Apimentado"></div>
+        <div class="swiper-slide"><img src="img/ParafusoApimentado.png" alt="Macarrão Apimentado" /></div>
+        <div class="swiper-slide"><img src="img/CaramelizadoParafuso.png" alt="Macarrão Caramelizado" /></div>
+        <div class="swiper-slide"><img src="img/PenneApimentado.png" alt="Macarrão Apimentado" /></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">@MariMassas.ind</h2>
+          <p class="descrição__texto">
+            Construindo e promovendo nossa indústria, através do Instagram.
+          </p>
+        </div>
+        <img src="img/instagram.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/EspagueteTradicional.png"alt="Macarrão Tradicional"></div>
+        <div class="swiper-slide"><img src="img/FettucineTradicional.png" alt="Macarrão Tradicional"></div>
+        <div class="swiper-slide"><img src="img/PenneSemGluten.png" alt="Macarrão Sem Glúten"></div>
+        <div class="swiper-slide"><img src="img/EspagueteApimentado.png" alt="Macarrão Apimentado"></div>
+        <div class="swiper-slide"><img src="img/ParafusoSemGluten.png" alt="Macarrão Sem Glúten"></div>
+        <div class="swiper-slide"><img src="img/FettucineCaramelizado.png" alt="Macarrçao Caramelizado"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Funcionário do Mês</h3>
+          <h2 class="descrição__titulo-livro">Carla Silva</h2>
+          <p class="descrição__texto">Responsável pela Produção e Auxiliar de Limpeza
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Funcionariodomes2.png" class="descrição__funcionario">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Tabela Nutricional</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Nossos Serviços</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Sedes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Vagas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Missão</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Visão</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Valores</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de produtos, novos sabores, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Indústria e Comércio de Massas - Mariana S Roberto Ltda.</h2>
+    <h4 class="rodapé__subtitulo">ind@marimassas.com  -  (16) 3242-5200</h4>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>

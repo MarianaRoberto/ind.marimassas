@@ -1,0 +1,22 @@
+hr {
+    margin: 0;
+}
+
+.rodapé {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.rodapé__titulo {
+    color: #4f2b18;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.rodapé__subtitulo {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
